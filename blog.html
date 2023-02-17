@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with-device-width, initial-scale=1.0">
+	<title>Aspire University Responsive Website - Rainniel Remoto</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body oncontextmenu="return false;">
+
+	<!-------------- HEADER -------------->
+
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="aspire_university_white.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="courses.html">COURSE</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="content.html">CONTACT</a></li>
+					<li><a href="signin.html">SIGN IN</a></li>
+				</ul>
+			</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Our Certificates & Online Programs For 2023</h1>
+	</section>
+
+	<!-------------- Blog Content ------------->
+
+	<section class="blog-content">
+		<div class="row">
+			<div class="blog-left">
+				<img src="certification.jpg">
+				<h2>Our Certificates & Online Programs For 2023</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at dolor non dolor vehicula porta. Integer auctor leo non risus ornare lobortis. Suspendisse sodales blandit nibh, ut venenatis lacus. Nam enim purus, vulputate et velit eu, bibendum bibendum arcu. Curabitur vel arcu purus. Morbi ac diam sem. Aenean vulputate egestas lacus, eget tristique diam convallis in. Donec neque metus, vehicula at arcu et, hendrerit viverra libero. Cras vel sapien at lectus cursus tempor in ut dolor. Vestibulum suscipit vel enim ac euismod. Proin faucibus, velit eget molestie semper, massa ligula convallis est, ut efficitur dolor nisl quis lacus. Sed molestie at dui id cursus. Vestibulum rutrum semper scelerisque.</p>
+				<br>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at dolor non dolor vehicula porta. Integer auctor leo non risus ornare lobortis. Suspendisse sodales blandit nibh, ut venenatis lacus. Nam enim purus, vulputate et velit eu, bibendum bibendum arcu. Curabitur vel arcu purus. Morbi ac diam sem. Aenean vulputate egestas lacus, eget tristique diam convallis in. Donec neque metus, vehicula at arcu et, hendrerit viverra libero. Cras vel sapien at lectus cursus tempor in ut dolor. Vestibulum suscipit vel enim ac euismod. Proin faucibus, velit eget molestie semper, massa ligula convallis est, ut efficitur dolor nisl quis lacus. Sed molestie at dui id cursus. Vestibulum rutrum semper scelerisque.</p>
+				<br>
+				<p>Aliquam ac gravida neque. Phasellus id pulvinar arcu, quis scelerisque sem. Sed quis massa et ante maximus ultricies nec ornare eros. Sed faucibus sem commodo velit pellentesque, ac facilisis ipsum porttitor. Praesent blandit dui in nulla dignissim dignissim. Etiam magna arcu, varius ac volutpat ut, congue sit amet sapien. Duis sollicitudin urna et tellus suscipit ultricies. In volutpat condimentum augue non tincidunt.</p>
+				<div class="comment-box">
+					<h3 style="color: black">Leave a Comment</h3>
+					<form class="comment-form">
+						<input type="text" placeholder="Enter Name">
+						<input type="email" placeholder="Enter Email">
+						<textarea rows="5" placeholder="Your Comment here..."></textarea>
+						<button type="submit" class="hero-btn orange-btn">POST COMMENT</button>
+					</form>
+				</div>
+			</div>
+			<div class="blog-right">
+				<h3>Post Categories</h3>
+				<div>
+					<span>Introduction to Psychology</span>
+					<span>21</span>
+				</div>
+				<div>
+					<span>Writing and Rhetoric</span>
+					<span>18</span>
+				</div>
+				<div>
+					<span>Fundamentals of Computer Science</span>
+					<span>16</span>
+				</div>
+				<div>
+					<span>Applied Statistics and Data Analysis</span>
+					<span>17</span>
+				</div>
+				<div>
+					<span>Principles of Marketing</span>
+					<span>29</span>
+				</div>
+				<div>
+					<span>Computer Science</span>
+					<span>29</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<!-------------- FOOTER -------------->
+
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>The Aspire University Students, Head Teachers, Faculty Members, Dean's and other officials.<br>Are welcome to offer your spot careers!</p>
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+			<i class="fa fa-youtube"></i>
+			<i class="fa fa-github"></i>
+		</div>
+		<p><i class="fa fa-copyright"></i>&nbsp&nbsp&nbsp Rainniel Remoto</p>
+	</section>
+
+	<!-------------- SCRIPT -------------->
+
+	<script type="text/javascript">
+		var navLinks = document.getElementById("navLinks");
+		function showMenu()
+		{
+			navLinks.style.right = "0";
+		}
+		function hideMenu()
+		{
+			navLinks.style.right = "-500px";
+		}
+		document.onkeydown = function(e)
+		{
+			if(event.keyCode == 123)
+			{
+				return false;
+			}
+			if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+			{
+				return false;
+			}
+			if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+			{
+				return false;
+			}
+			if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+			{
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

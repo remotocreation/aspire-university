@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with-device-width, initial-scale=1.0">
+	<title>Aspire University Responsive Website - Rainniel Remoto</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body oncontextmenu="return false;">
+
+	<!-------------- HEADER -------------->
+
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="aspire_university_white.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="courses.html">COURSE</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="content.html">CONTACT</a></li>
+					<li><a href="signin.html">SIGN IN</a></li>
+				</ul>
+			</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>About Us</h1>
+	</section>
+
+	<!-------------- About Us Content ------------->
+
+	<section class="about-us">
+		<div class="row">
+			<div class="about-col">
+				<h1>We are the Largest University in Metro Manila</h1>
+				<p>Aspire University is a prestigious academic institution that aims to inspire and empower students to reach their fullest potential by offering a comprehensive range of educational programs and resources that foster creativity, critical thinking, and personal development.</p>
+				<a href="" class="hero-btn orange-btn">EXPLORE NOW</a>
+			</div>
+			<div class="about-col">
+				<img src="about_us2.jpg">
+			</div>
+		</div>
+	</section>
+
+	<!-------------- FOOTER -------------->
+
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>The Aspire University Students, Head Teachers, Faculty Members, Dean's and other officials.<br>Are welcome to offer your spot careers!</p>
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+			<i class="fa fa-youtube"></i>
+			<i class="fa fa-github"></i>
+		</div>
+		<p><i class="fa fa-copyright"></i>&nbsp&nbsp&nbsp Rainniel Remoto</p>
+	</section>
+
+	<!-------------- SCRIPT -------------->
+
+	<script type="text/javascript">
+		var navLinks = document.getElementById("navLinks");
+		function showMenu()
+		{
+			navLinks.style.right = "0";
+		}
+		function hideMenu()
+		{
+			navLinks.style.right = "-500px";
+		}
+		document.onkeydown = function(e)
+		{
+			if(event.keyCode == 123)
+			{
+				return false;
+			}
+			if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))
+			{
+				return false;
+			}
+			if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0))
+			{
+				return false;
+			}
+			if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+			{
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>
